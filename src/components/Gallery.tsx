@@ -53,10 +53,25 @@ const Gallery: React.FC = () => {
     <main className={styles.viewport}>
       <div className="grain" />
       
-      {/* 
-        Container covers full viewport and handles the drag.
-        Images inside are logically positioned but react to this single dragX.
-      */}
+      {/* Static Background Frame with Corner Brackets */}
+      <div className={styles.staticFrame}>
+        {/* Top Left */}
+        <div className={`${styles.marker} ${styles.markerTL_H}`} />
+        <div className={`${styles.marker} ${styles.markerTL_V}`} />
+        
+        {/* Top Right */}
+        <div className={`${styles.marker} ${styles.markerTR_H}`} />
+        <div className={`${styles.marker} ${styles.markerTR_V}`} />
+        
+        {/* Bottom Left */}
+        <div className={`${styles.marker} ${styles.markerBL_H}`} />
+        <div className={`${styles.marker} ${styles.markerBL_V}`} />
+        
+        {/* Bottom Right */}
+        <div className={`${styles.marker} ${styles.markerBR_H}`} />
+        <div className={`${styles.marker} ${styles.markerBR_V}`} />
+      </div>
+
       <motion.div 
         className={styles.galleryContainer}
         drag="x"

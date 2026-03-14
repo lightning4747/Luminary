@@ -44,8 +44,8 @@ const GalleryImage: React.FC<GalleryImageProps> = ({
   const relPos = getRelativePosition(index, activeIndex);
 
   // Layout Constants
-  const xMult = windowSize.w * 0.38;
-  const yMult = windowSize.h * 0.30;
+  const xMult = windowSize.w * 0.35;
+  const yMult = windowSize.h * 0.25;
   
   // Drag sensitivity
   const dragRange = windowSize.w * 0.6;
