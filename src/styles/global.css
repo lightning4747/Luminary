@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=DM+Mono:wght@300;400&display=swap');
+
+:root {
+  --c-canvas: #0A0A0A;
+  --c-ivory: #F0EDE6;
+  --c-accent: #C8B89A;
+  --c-mid: #666666;
+  --c-rule: #D4CFC8;
+  --c-dim: rgba(255, 255, 255, 0.08);
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-ui: 'DM Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--c-canvas);
+  color: var(--c-ivory);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.04;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* Custom scrollbar (though we hide overflow) */
+::-webkit-scrollbar {
+  width: 0px;
+}
