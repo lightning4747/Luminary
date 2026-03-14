@@ -1,0 +1,44 @@
+@import "../styles/global.css";
+
+.topRight {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  z-index: 20;
+  text-align: right;
+}
+
+.themeText {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--c-accent);
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 20;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.number {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--c-mid);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  line-height: 1;
+  margin: 0;
+}
