@@ -53,6 +53,24 @@ const Gallery: React.FC = () => {
     <main className={styles.viewport}>
       <div className="grain" />
       
+      {/* Radiant atmospheric background */}
+      <div className={styles.glowContainer}>
+        <div className={`${styles.glow} ${styles.glow1}`} />
+        <div className={`${styles.glow} ${styles.glow2}`} />
+        <div className={`${styles.glow} ${styles.glow3}`} />
+        {/* Slow glowing particles */}
+        <div className={`${styles.particle} ${styles.particle1}`} />
+        <div className={`${styles.particle} ${styles.particle2}`} />
+        <div className={`${styles.particle} ${styles.particle3}`} />
+        <div className={`${styles.particle} ${styles.particle4}`} />
+        <div className={`${styles.particle} ${styles.particle5}`} />
+        <div className={`${styles.particle} ${styles.particle6}`} />
+        <div className={`${styles.particle} ${styles.particle7}`} />
+        <div className={`${styles.particle} ${styles.particle8}`} />
+        <div className={`${styles.particle} ${styles.particle9}`} />
+        <div className={`${styles.particle} ${styles.particle10}`} />
+      </div>
+
       {/* Static Background Frame with Corner Brackets */}
       <div className={styles.staticFrame}>
         {/* Top Left */}

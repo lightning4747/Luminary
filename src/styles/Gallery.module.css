@@ -59,7 +59,7 @@
   height: 60vw;
   border-radius: 50%;
   filter: blur(12vw);
-  opacity: 0.15;
+  opacity: 0.2; /* Brighter glow */
   mix-blend-mode: screen;
   animation: float 20s infinite alternate ease-in-out;
 }
@@ -83,8 +83,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.1;
-  animation: pulse 15s infinite alternate ease-in-out;
+  opacity: 0.15;
+  animation: pulseGlow 15s infinite alternate ease-in-out;
 }
 
 @keyframes float {
@@ -92,10 +92,43 @@
   100% { transform: translate(10vw, 5vh) scale(1.1); }
 }
 
-@keyframes pulse {
-  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.05; }
-  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.15; }
+@keyframes pulseGlow {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.1; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.2; }
 }
+
+/* Firefly Particles */
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ffeeb3; /* Firefly amber */
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0 0 10px 2px rgba(255, 230, 150, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  animation: fireflyDrift 20s infinite ease-in-out;
+}
+
+@keyframes fireflyDrift {
+  0% { transform: translate(0, 0) scale(1); opacity: 0; }
+  20% { opacity: 0.6; }
+  50% { transform: translate(50px, -40px) scale(1.2); opacity: 0.8; }
+  80% { opacity: 0.6; }
+  100% { transform: translate(120px, -100px) scale(1); opacity: 0; }
+}
+
+.particle1 { top: 70%; left: 10%; animation-delay: 0s; }
+.particle2 { top: 40%; left: 80%; animation-delay: -5s; }
+.particle3 { top: 20%; left: 30%; animation-delay: -12s; }
+.particle4 { top: 85%; left: 60%; animation-delay: -18s; }
+.particle5 { top: 15%; left: 85%; animation-delay: -2s; }
+.particle6 { top: 60%; left: 40%; animation-delay: -7s; }
+.particle7 { top: 30%; left: 10%; animation-delay: -15s; }
+.particle8 { top: 90%; left: 20%; animation-delay: -22s; }
+.particle9 { top: 10%; left: 50%; animation-delay: -10s; }
+.particle10 { top: 50%; left: 90%; animation-delay: -3s; }
 
 .marker {
   position: absolute;

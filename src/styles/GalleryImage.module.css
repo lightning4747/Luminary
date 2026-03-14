@@ -53,14 +53,5 @@
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 1;
-}
-
-.flanking .overlay {
-  opacity: 0.6;
+  display: none;
 }
